@@ -51,7 +51,7 @@ $(function () {
                 if (res.status != 0) {
                     return layui.layer.msg(res.message, { icon: 5 })
                 };
-                layer.msg('上传成功', { icon: 6 });
+                layer.msg('头像上传成功', { icon: 6 });
                 window.parent.getuserInfo();
             }
         })

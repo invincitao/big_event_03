@@ -59,7 +59,7 @@ $(function () {
             success: (res) => {
                 // console.log(res);
                 if (res.status != 0) {
-                    return layer.msg(res.message, { icon: 5 });
+                    return layer.msg('用户名或密码错误', { icon: 5 });
                 }
                 layer.msg('登录成功', { icon: 6 });
                 localStorage.setItem('mytoken', res.token)
